@@ -14,3 +14,271 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.colorBG{
+  background-color: #e1e1e1;
+}
+
+.colorNew{
+  background-color: black;
+}
+
+.fuente{
+  font-size: 12px;
+}
+
+.barra2{
+  height: 30px;
+}
+
+.espacio{
+  margin-left: 3rem;
+}
+
+.dimensionar{
+  height: 400px;
+}
+
+/* Dotted red border */
+hr {
+  border-top: 1px dotted black;
+}
+
+.estilo-x {
+  font-size: calc(1em + 1vw);
+  line-height: 1em;
+  padding: 1em;
+  margin: 1em;}
+
+.gradiente{
+  background : linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
+
+/* fonts  */
+
+#container{
+	box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+	background: rgba(255, 255, 255, 0.90);
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 2rem;
+	height: 350px;
+	width: 600px;
+	
+}
+
+
+
+/* 	Product details  */
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+  margin-top: 4rem;
+}
+
+/* 	Product Name */
+#container .product-details h1{
+	display: inline-block;
+	position: relative;
+	font-size: 34px;
+	color: #344055;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+/* The most important information about the product */
+#container .product-details p {
+	font-size: 20px;
+	
+}
+
+/* the Button */
+.buttonProd {
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.buttonProd span {
+	transition: transform 0.3s;
+	display: inline-block;
+  padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+  text-decoration-line: underline;
+}
+
+/* product image  */
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 50%;
+	display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.contenedor {
+  width: 60%;
+	margin: auto;
+}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 20px;
+	width: 50%;
+	max-width: 200px;
+}
+
+.contenido-principal__contenedor {
+	width: 50%;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+}
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	color: #CFCFCF;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+  position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+  left: -30px;
+  border: solid 2px black;
+}
+
+.carousel__siguiente {
+  right: -30px;
+  border: solid 2px black;
+}
+
+.carousel__lista {
+  overflow: hidden;
+}
+
+.carousel__elemento {
+  margin-right: 1rem;
+  background-color: white;
+}
+
+.carousel__elemento img{
+  width: 500px;
+}
+
+.carousel__elemento p{
+  margin-left: 1rem;
+}
+
+.carousel__elemento span{
+  margin-left: 1rem;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+
+.marginComponentProds{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.marginComponentProds h1{
+  margin-top: 6rem;
+}
+
+.f1{
+  padding-left: 0px;
+}
+
+.f2{
+  width: 60px;
+}
+
+.f3{
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
